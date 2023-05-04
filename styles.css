@@ -1,0 +1,39 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+p {
+  overflow: hidden;
+  /* STEP 10: Change the below timing (in seconds) of the open/close animation */
+  transition: all 0.25s;
+  min-height: 0;
+  /* STEP 3: Set the height of all paragraphs to zero in order to hide them, then go to HTML for STEP 4. */
+  height: auto;
+  padding: 0 0.5rem;
+  /* STEP 2: Change the background colour of the <p> elements to lightgrey */
+  background-color: transparent;
+}
+/* STEP 5: Change the colour and background colour of any <h2> with class="open". Then go to JS for STEP 6. */
+h2.open {
+  background-color: ;
+  color: ;
+}
+h2.open + p {
+  min-height: 75px;
+  padding: 0.5rem;
+}
+p:has(img) {
+  text-align: center;
+  height: auto;
+  margin-top: 1rem;
+  background-color: transparent;
+}
+
